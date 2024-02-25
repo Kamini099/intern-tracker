@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>InternTracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>InternTracker</h1>
+      <div id="form-container">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" required />
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" required />
+
+        <label for="status">Application Status:</label>
+        <select id="status" required>
+          <option value="applied">Applied</option>
+          <option value="interview">Interview Scheduled</option>
+          <option value="rejected">Rejected</option>
+          <option value="offer">Offer Received</option>
+        </select>
+
+        <label for="deadline">Application Deadline:</label>
+        <input type="date" id="deadline" required />
+
+        <label for="oaDate">OA Date:</label>
+        <input type="date" id="oaDate" />
+
+        <button id="addApplication">Add Application</button>
+      </div>
+
+      <ul id="applicationList"></ul>
+      <!-- <button id="fillForm">Fill Form</button> -->
+
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
